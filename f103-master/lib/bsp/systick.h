@@ -9,10 +9,11 @@
 #define SYSTICK_H_
 
 #include "macro_types.h"
+#include <stdint.h>
 
 void Systick_init(void);
 
-//Routine d'interruption appelée automatiquement à chaque ms.
+//Routine d'interruption appelï¿½e automatiquement ï¿½ chaque ms.
 void SysTick_Handler(void);
 
 
