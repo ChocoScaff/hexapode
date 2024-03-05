@@ -46,3 +46,6 @@
 
 */Debug/*
 */Release/*
+*.launch
+*.metadata
+*.settings
