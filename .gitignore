@@ -28,6 +28,7 @@
 *.map
 *.m
 
+
 # Eclipse CDT project files
 .cproject
 .project
@@ -42,3 +43,6 @@
 
 # Libraries
 /lib
+
+*/Debug/*
+*/Release/*
