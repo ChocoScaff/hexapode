@@ -27,7 +27,7 @@
 # Misc
 *.map
 *.m
-*.png
+
 
 # Eclipse CDT project files
 .cproject
@@ -43,3 +43,9 @@
 
 # Libraries
 /lib
+
+*/Debug/*
+*/Release/*
+*.launch
+*.metadata
+*.settings
