@@ -68,12 +68,25 @@ int main(void)
 #endif
 
 
-	while(1)	//boucle de t�che de fond
-	{
-		if(!t)
-		{
-			t = 200;
-			HAL_GPIO_TogglePin(LED_GREEN_GPIO, LED_GREEN_PIN);
-		}
-	}
+    while(1)
+    {
+        if(!t)
+        {
+            t = 200; // Refresh rate
+            HAL_GPIO_TogglePin(LED_GREEN_GPIO, LED_GREEN_PIN);
+
+            // Example of moving the servo: Modify the duty cycle to move the servo
+            // Here, just toggling between two positions as an example
+            static bool positionToggle = false;
+            if(positionToggle)
+            {
+                PWM_set_period_and_duty(TIMER1_ID, TIM_CHANNEL_1, 20000, 1000); // Change to position 1
+            }
+            else
+            {
+                PWM_set_period_and_duty(TIMER1_ID, TIM_CHANNEL_1, 20000, 2000); // Change to position 2
+            }
+            positionToggle = !positionToggle;
+        }
+    }
 }
