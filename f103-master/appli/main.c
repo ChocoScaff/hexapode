@@ -60,7 +60,7 @@ int main(void)
 
 
 #if USE_PWM
-	PWM_set_prescaler(TIMER1_ID, 100)
+	PWM_set_prescaler(TIMER1_ID, 100);
 	PWM_set_period_and_duty(TIMER1_ID, TIM_CHANNEL_1, 1, 1);
 
 	PWM_configure_pin(TIMER1_ID, TIM_CHANNEL_1, true, true, true);
