@@ -12,6 +12,7 @@
 #include "stm32f1_gpio.h"
 #include "macro_types.h"
 #include "systick.h"
+#include "stdbool.h"
 
 #if USE_PWM
 	#include "stm32f1_pwm.h"
