@@ -13,10 +13,7 @@
 #include "macro_types.h"
 #include "systick.h"
 #include "stdbool.h"
-
-#if USE_PWM
-	#include "stm32f1_pwm.h"
-#endif
+#include "servo.h"
 
 void writeLED(bool_e b)
 {
@@ -59,14 +56,8 @@ int main(void)
 	//On ajoute la fonction process_ms � la liste des fonctions appel�es automatiquement chaque ms par la routine d'interruption du p�riph�rique SYSTICK
 	Systick_add_callback_function(&process_ms);
 
-
-#if USE_PWM
-	PWM_set_prescaler(TIMER1_ID, 100);
-	PWM_set_period_and_duty(TIMER1_ID, TIM_CHANNEL_1, 1, 1);
-
-	PWM_configure_pin(TIMER1_ID, TIM_CHANNEL_1, true, true, true);
-#endif
-
+	Servo_t servo1;
+	SERVO_init(&servo1, TIMER1_ID, TIM_CHANNEL_1);
 
     while(1)
     {
@@ -77,16 +68,9 @@ int main(void)
 
             // Example of moving the servo: Modify the duty cycle to move the servo
             // Here, just toggling between two positions as an example
-            static bool positionToggle = false;
-            if(positionToggle)
-            {
-                PWM_set_period_and_duty(TIMER1_ID, TIM_CHANNEL_1, 20000, 1000); // Change to position 1
-            }
-            else
-            {
-                PWM_set_period_and_duty(TIMER1_ID, TIM_CHANNEL_1, 20000, 2000); // Change to position 2
-            }
-            positionToggle = !positionToggle;
+            SERVO_set_position(&servo1, 50);
         }
+        SERVO_set_position(&servo1, 0);
+
     }
 }
