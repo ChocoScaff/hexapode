@@ -8,8 +8,15 @@
 #ifndef SERVO_H_
 #define SERVO_H_
 
-void SERVO_process_test(void);
-void SERVO_init(timer_id_e timerid, uint32_t TIM_CHANNEL);
-void SERVO_set_position(uint16_t position);
-uint16_t SERVO_get_position(void);
+typedef struct {
+	timer_id_e timerid;
+	uint16_t tim_channel;
+	uint16_t current_position;
+}Servo_t;
+
+
+void SERVO_process_test(Servo_t *servo);
+void SERVO_init(Servo_t *servo, timer_id_e timerid, uint16_t TIM_CHANNEL);
+void SERVO_set_position(Servo_t *servo, uint16_t position);
 #endif /* SERVO_H_ */
+
