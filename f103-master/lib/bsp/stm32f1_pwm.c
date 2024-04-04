@@ -25,23 +25,23 @@ void PWM_test(void)
 	PWM_run(TIMER1_ID, TIM_CHANNEL_2, TRUE,1000, 10, FALSE);	//Timer 1 - Canal 2 Negative (1.CH2N) -> PB14
 
 	//exemple pour un servomoteur...
-	//cet exemple écrase les configs précédentes du timer 1 (car la période change)
+	//cet exemple ï¿½crase les configs prï¿½cï¿½dentes du timer 1 (car la pï¿½riode change)
 	PWM_run(TIMER1_ID, TIM_CHANNEL_3, FALSE,20000, 5, FALSE);	//Timer 1 - Canal 3 Positive (1.CH3) -> PA10
 
 }
 
-/** @brief 	Fonction qui configure et lance la pwm demandée
+/** @brief 	Fonction qui configure et lance la pwm demandï¿½e
  * @func 	void PWM_run(timer_id_e timer_id, uint16_t TIM_CHANNEL_x, uint32_t period_us, uint32_t duty, bool_e negative_chanel)
- * @param	timer_id : TIMERX_ID, où X est le numéro du timer
- * @param	TIM_CHANNEL_x, où x est le numéro du canal
+ * @param	timer_id : TIMERX_ID, oï¿½ X est le numï¿½ro du timer
+ * @param	TIM_CHANNEL_x, oï¿½ x est le numï¿½ro du canal
  * @param	negative channel : TRUE s'il s'agit de configuer l'un des canaux CH1_N, CH2_N, CH3_N. False sinon.
- * @param	period_us : période demandée pour le signal pwm, en microsecondes, de 1us à 40s
- * @param	duty : rapport cyclique souhaité. ATTENTION : exprimé en pourcents. (de 0 à 100).
- * @param   remap : TRUE pour activer le remappage de la broche, c'est à dire TRUE si le petit 'r' dans le ficher excel présentant les ports du microcontrôlleur est présent dans la colonne du timer pour le channel associéà la broche du micro, pour la bluepill ou nucleo
- * @post	Premièrement, cette fonction configure la broche correspondante au canal demandé.
- * 			Ensuite, cette fonction lance (ou relance !) le timer demandé avec la période demandée.
- * 			Puis, elle lance un signal PWM au rapport cyclique demandé.
- * @pre		Attention, si vous utilisez cette fonction pour plusieurs canaux d'un même timer, veillez à indiquer les mêmes valeurs de period_us ! Sinon, la dernière valeur gagnera !
+ * @param	period_us : pï¿½riode demandï¿½e pour le signal pwm, en microsecondes, de 1us ï¿½ 40s
+ * @param	duty : rapport cyclique souhaitï¿½. ATTENTION : exprimï¿½ en pourcents. (de 0 ï¿½ 100).
+ * @param   remap : TRUE pour activer le remappage de la broche, c'est ï¿½ dire TRUE si le petit 'r' dans le ficher excel prï¿½sentant les ports du microcontrï¿½lleur est prï¿½sent dans la colonne du timer pour le channel associï¿½ï¿½ la broche du micro, pour la bluepill ou nucleo
+ * @post	Premiï¿½rement, cette fonction configure la broche correspondante au canal demandï¿½.
+ * 			Ensuite, cette fonction lance (ou relance !) le timer demandï¿½ avec la pï¿½riode demandï¿½e.
+ * 			Puis, elle lance un signal PWM au rapport cyclique demandï¿½.
+ * @pre		Attention, si vous utilisez cette fonction pour plusieurs canaux d'un mï¿½me timer, veillez ï¿½ indiquer les mï¿½mes valeurs de period_us ! Sinon, la derniï¿½re valeur gagnera !
  *
  */
 void PWM_run(timer_id_e timer_id, uint32_t TIM_CHANNEL_x, bool_e negative_channel, uint32_t period_us, uint32_t duty, bool_e remap)
@@ -75,19 +75,19 @@ void PWM_run(timer_id_e timer_id, uint32_t TIM_CHANNEL_x, bool_e negative_channe
 	}
 }
 
-/** @brief	fonction qui règle le rapport cyclique sur le canal demandé.
+/** @brief	fonction qui rï¿½gle le rapport cyclique sur le canal demandï¿½.
  * @func	PWM_set_duty(timer_id_e timer_id, uint16_t TIM_CHANNEL_x, uint16_t duty)
- * @param	timer_id : TIMERX_ID, où X est le numéro du timer
- * @param	TIM_CHANNEL_x, où x est le numéro du canal
- * @param	duty : rapport cyclique exprimé en pourcents (de 0 à 100)
- * @post	Des effets de bords (arrondis) peuvent apparaître si la periode du timer n'est pas un multiple de 100.
- * 			Attention, même si la période du timer est multiple de 100us, cela peut se produire si la fonction TIMER_run_us a calculé une période non multiple de 100 !
+ * @param	timer_id : TIMERX_ID, oï¿½ X est le numï¿½ro du timer
+ * @param	TIM_CHANNEL_x, oï¿½ x est le numï¿½ro du canal
+ * @param	duty : rapport cyclique exprimï¿½ en pourcents (de 0 ï¿½ 100)
+ * @post	Des effets de bords (arrondis) peuvent apparaï¿½tre si la periode du timer n'est pas un multiple de 100.
+ * 			Attention, mï¿½me si la pï¿½riode du timer est multiple de 100us, cela peut se produire si la fonction TIMER_run_us a calculï¿½ une pï¿½riode non multiple de 100 !
  */
 void PWM_set_duty(timer_id_e timer_id, uint32_t TIM_CHANNEL_x, uint32_t duty)
 {
 	TIM_HandleTypeDef * handler = NULL;
 	handler = TIMER_get_phandler(timer_id);
-	duty = MIN(100,duty);	//Ecretage... Le rapport cyclique ne peut donc pas être plus grand que 100 !
+	duty = MIN(100,duty);	//Ecretage... Le rapport cyclique ne peut donc pas ï¿½tre plus grand que 100 !
 	duty = ((duty*(handler->Init.Period+1))/100);
 
 	__HAL_TIM_SET_COMPARE(handler, TIM_CHANNEL_x, duty);
@@ -106,7 +106,7 @@ void PWM_set_period_and_duty(timer_id_e timer_id, uint32_t TIM_CHANNEL_x, uint32
 {
 	TIM_HandleTypeDef * handler = NULL;
 	handler = TIMER_get_phandler(timer_id);
-	duty = MIN(100,duty);	//Ecretage... Le rapport cyclique ne peut donc pas être plus grand que 100 !
+	duty = MIN(100,duty);	//Ecretage... Le rapport cyclique ne peut donc pas ï¿½tre plus grand que 100 !
 
 	__HAL_TIM_SET_AUTORELOAD(handler, period_us - 1);
 
@@ -116,13 +116,13 @@ void PWM_set_period_and_duty(timer_id_e timer_id, uint32_t TIM_CHANNEL_x, uint32
 
 
 /*
- * @brief	Cette fonction configure la broche PWM du canal demandé.
+ * @brief	Cette fonction configure la broche PWM du canal demandï¿½.
  * @func 	void PWM_configure_pin(timer_id_e timer_id, uint16_t TIM_CHANNEL_x, bool_e negative_chanel, bool_e enable, bool_e remap)
- * @param	timer_id : TIMERX_ID, où X est le numéro du timer
- * @param	TIM_CHANNEL_x, où x est le numéro du canal
+ * @param	timer_id : TIMERX_ID, oï¿½ X est le numï¿½ro du timer
+ * @param	TIM_CHANNEL_x, oï¿½ x est le numï¿½ro du canal
  * @param	negative channel : TRUE s'il s'agit de configuer l'un des canaux CH1_N, CH2_N, CH3_N. False sinon.
- * @param	enable : TRUE pour configurer la broche en sortie push-pull et faire sortir le signal PWM. FALSE pour configurer la broche en entrée.
- * @param   remap : TRUE pour activer le remappage de la broche, c'est à dire TRUE si le petit 'r' dans le ficher excel présentant les ports du microcontrôlleur est présent dans la colonne du timer pour le channel associéà la broche du micro pour la bluepill ou nucleo
+ * @param	enable : TRUE pour configurer la broche en sortie push-pull et faire sortir le signal PWM. FALSE pour configurer la broche en entrï¿½e.
+ * @param   remap : TRUE pour activer le remappage de la broche, c'est ï¿½ dire TRUE si le petit 'r' dans le ficher excel prï¿½sentant les ports du microcontrï¿½lleur est prï¿½sent dans la colonne du timer pour le channel associï¿½ï¿½ la broche du micro pour la bluepill ou nucleo
  **/
 void PWM_configure_pin(timer_id_e timer_id, uint16_t TIM_CHANNEL_x, bool_e negative_channel, bool_e enable, bool_e remap)
 {
@@ -140,8 +140,8 @@ void PWM_configure_pin(timer_id_e timer_id, uint16_t TIM_CHANNEL_x, bool_e negat
 		pull = GPIO_PULLDOWN;
 	}
 
-	//On configure la broche indiquée pour le mode AF (Alternate Function), associée au périhérique TIMx.
-	//Cette broche ne sera donc plus contrôlable comme une entrée sortie à usage général (GPIO)... On l'a confiée au timer TIMx.
+	//On configure la broche indiquï¿½e pour le mode AF (Alternate Function), associï¿½e au pï¿½rihï¿½rique TIMx.
+	//Cette broche ne sera donc plus contrï¿½lable comme une entrï¿½e sortie ï¿½ usage gï¿½nï¿½ral (GPIO)... On l'a confiï¿½e au timer TIMx.
 	if(negative_channel)
 	{
 		if(timer_id == TIMER1_ID)
