@@ -1,19 +1,25 @@
 /*
- * servo.c
+ * @file servo.c
  *
  *  Created on: 29 févr. 2024
  *      Author: brouzean
  */
+
+
 #include "config.h"
 #include "stm32f1_timer.h"
 #include "stm32f1_gpio.h"
 #include "macro_types.h"
 #include "servo.h"
 
+/**
+ * @def
+ */
 #define PERIOD_TIMER 10 //ms
 
 /**
  *
+ * @param Servo_t
  */
 void SERVO_process_test(Servo_t *servo)
 {
@@ -34,6 +40,10 @@ void SERVO_process_test(Servo_t *servo)
 
 /**
  *
+ * @param Servo_t
+ * @param timer_id_e
+ * @param TIM_Chanel
+ *
  */
 void SERVO_init(Servo_t *servo, timer_id_e timerid, uint16_t TIM_CHANNEL){
 
@@ -52,7 +62,9 @@ void SERVO_init(Servo_t *servo, timer_id_e timerid, uint16_t TIM_CHANNEL){
 
 
 /**
- * @argument position est exprimée de 0 à 100.
+ *
+ * @param Servo_t
+ * @param position est exprimée de 0 à 100.
  *
  */
 void SERVO_set_position(Servo_t *servo, uint16_t position){
@@ -66,7 +78,9 @@ void SERVO_set_position(Servo_t *servo, uint16_t position){
 
 
 /**
- * @argument position est exprimée de 0 à 100.
+ *
+ * @param servo
+ * @param position est exprimée de 0 à 100.
  *
  */
 void SERVO_increment_position(Servo_t *servo, uint16_t position){

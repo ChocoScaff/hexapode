@@ -11,6 +11,9 @@
 #include "stm32f1xx_hal_tim.h"
 #include "stm32f1_timer.h"
 
+/**
+ * @struct Servo_t
+ */
 typedef struct {
 	timer_id_e timerid;
 	uint16_t tim_channel;
