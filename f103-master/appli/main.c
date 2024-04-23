@@ -15,11 +15,18 @@
 #include "stdbool.h"
 #include "servo.h"
 
+/**
+ *
+ */
 void writeLED(bool_e b)
 {
 	HAL_GPIO_WritePin(LED_GREEN_GPIO, LED_GREEN_PIN, b);
 }
 
+/**
+ *
+ * @return
+ */
 bool_e readButton(void)
 {
 	return !HAL_GPIO_ReadPin(BLUE_BUTTON_GPIO, BLUE_BUTTON_PIN);

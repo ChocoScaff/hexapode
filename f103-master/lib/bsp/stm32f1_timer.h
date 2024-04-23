@@ -13,7 +13,9 @@
 #include "config.h"
 #if USE_BSP_TIMER
 
-
+/**
+ * @enum timer_id_e
+ */
 typedef enum
 {
 	TIMER1_ID,
@@ -24,13 +26,13 @@ typedef enum
 }timer_id_e;
 
 /**
- * @brief	Initialisation et lancement du timer sélectionné.
+ * @brief	Initialisation et lancement du timer sï¿½lectionnï¿½.
  * 			Cette fonction lance de timer et le configure Il peut declancher une IT quand il y a debordement du timer.
  * @func 	void TIMER_run_us(void)
  * @param id du timer : cf timer_id_e
  * @param us temps en us code sur un 32bits non signe
  * @param enable_irq : TRUE : active les IT, FALSE ne les active pas. En cas d'activation des IT, l'utilisateur doit ecrire une fonction TIMERx_user_handler_it. Par defaut, ces fonctions ecrites dans ce fichier mais avec l'attribut weak (elles peuvent donc etre reecrites)
- * @post	Le timer et son horloge sont activés, ses interruptions autorisées, et son décompte lancé.
+ * @post	Le timer et son horloge sont activï¿½s, ses interruptions autorisï¿½es, et son dï¿½compte lancï¿½.
  */
 void TIMER_run_us(timer_id_e timer_id, uint32_t us, bool_e enable_irq);
 
@@ -56,16 +58,16 @@ void TIMER_set_duty(timer_id_e timer_id, uint16_t TIM_CHANNEL_x, uint16_t duty);
  * 			
  * @func 	void TIMER_stop(void)
  * @pre 	Le timer a ete initialise
- * @post	Le timer est desactivés
+ * @post	Le timer est desactivï¿½s
  */
 void TIMER_stop(timer_id_e timer_id);
 
 /**
- * @brief	acquite les IT sur le timer sélectionné.
+ * @brief	acquite les IT sur le timer sï¿½lectionnï¿½.
  * 			
  * @func 	void clear_it_status(void)
  * @pre 	Le timer a ete initialise
- * @post	Le timer est acquité
+ * @post	Le timer est acquitï¿½
  */
 void clear_it_status(timer_id_e timer_id);
 
