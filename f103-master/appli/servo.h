@@ -1,5 +1,5 @@
-/*
- * servo.h
+/**
+ * @file servo.h
  *
  *  Created on: 29 févr. 2024
  *      Author: brouzean
@@ -25,5 +25,6 @@ void SERVO_process_test(Servo_t *servo);
 void SERVO_init(Servo_t *servo, timer_id_e timerid, uint16_t TIM_CHANNEL);
 void SERVO_set_position(Servo_t *servo, uint16_t position);
 void SERVO_increment_position(Servo_t *servo, uint16_t position);
+
 #endif /* SERVO_H_ */
 
