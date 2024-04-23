@@ -62,10 +62,18 @@ void SERVO_set_position(Servo_t *servo, uint16_t position){
     uint16_t duty_c = servo->current_position+100;
 	TIMER_set_duty(servo->timerid, servo->tim_channel, duty_c );
 
-	//TODO : mise à jour du rapport cyclique.
-	//duty doit être exprimé ici de 100 à 200 (sur 1000) (pour un rapport cyclique de 10% à 20%, c’est-à-dire une durée de pulse de 1 à 2ms dans la période de 10ms)
-	//Donc on additionne 100 à position.
 }
 
 
+/**
+ * @argument position est exprimée de 0 à 100.
+ *
+ */
+void SERVO_increment_position(Servo_t *servo, uint16_t position){
+	servo->current_position += position;
+	if(servo->current_position > 100)
+		servo->current_position = 100; //écretage si l'utilisateur demande plus de 100%
+    uint16_t duty_c = servo->current_position+100;
+	TIMER_set_duty(servo->timerid, servo->tim_channel, duty_c );
 
+}
