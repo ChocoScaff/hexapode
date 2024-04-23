@@ -1,4 +1,4 @@
-/*
+/**
  * @file servo.c
  *
  *  Created on: 29 févr. 2024
@@ -19,7 +19,7 @@
 
 /**
  *
- * @param Servo_t
+ * @param servo
  */
 void SERVO_process_test(Servo_t *servo)
 {
@@ -40,7 +40,9 @@ void SERVO_process_test(Servo_t *servo)
 
 /**
  *
- * @param Servo_t
+ * Init Servo_t
+ *
+ * @param servo
  * @param timer_id_e
  * @param TIM_Chanel
  *
@@ -63,7 +65,9 @@ void SERVO_init(Servo_t *servo, timer_id_e timerid, uint16_t TIM_CHANNEL){
 
 /**
  *
- * @param Servo_t
+ *	Set new position
+ *
+ * @param servo
  * @param position est exprimée de 0 à 100.
  *
  */
@@ -78,6 +82,8 @@ void SERVO_set_position(Servo_t *servo, uint16_t position){
 
 
 /**
+ *
+ * Add position to current position
  *
  * @param servo
  * @param position est exprimée de 0 à 100.
