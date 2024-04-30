@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=+5V_servos Pin=J_?-1
+Removed Pin From Net: NetName=+5V_servos Pin=J_?-1
+Removed Pin From Net: NetName=+5V_servos Pin=J_?-1
+Removed Pin From Net: NetName=+5V_servos Pin=J_?-1
+Removed Pin From Net: NetName=+5V_servos Pin=J_?-1
+Removed Pin From Net: NetName=+5V_servos Pin=J_?-1
+Removed Pin From Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE

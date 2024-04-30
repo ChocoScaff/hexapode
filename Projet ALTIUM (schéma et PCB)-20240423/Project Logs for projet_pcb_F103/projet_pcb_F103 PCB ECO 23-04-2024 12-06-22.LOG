@@ -1,0 +1,288 @@
+Removed Pin From Net: NetName=+3V3 Pin=*-1
+Removed Pin From Net: NetName=GND Pin=*-2
+Removed Pin From Net: NetName=PA12_OUT Pin=*-3
+Removed Pin From Net: NetName=PA9_KEYBO1 Pin=*-4
+Removed Pin From Net: NetName=PA8_KEYBO0 Pin=*-5
+Removed Pin From Net: NetName=PA5_KEYBI1 Pin=*-7
+Removed Pin From Net: NetName=+3V3 Pin=*-8
+Removed Pin From Net: NetName=PA6_KEYBI2 Pin=*-9
+Removed Pin From Net: NetName=PA5_KEYBI1 Pin=*-10
+Removed Pin From Net: NetName=PA11_KEYBO3 Pin=*-11
+Removed Pin From Net: NetName=PA6_KEYBI2 Pin=*-13
+Removed Pin From Net: NetName=GND Pin=AF1-1
+Removed Pin From Net: NetName=+5V Pin=AF1-2
+Removed Pin From Net: NetName=PB8_I2C_SCL Pin=AF1-4
+Removed Pin From Net: NetName=PB9_I2C_SDA Pin=AF1-11
+Removed Pin From Net: NetName=PB11_LCD_D6 Pin=AF1-13
+Removed Pin From Net: NetName=PB12_BUTTON Pin=AF1-14
+Removed Pin From Net: NetName=GND Pin=AF1-16
+Removed Pin From Net: NetName=+3V3 Pin=Cd_tft-1
+Removed Pin From Net: NetName=GND Pin=Cd_tft-2
+Removed Pin From Net: NetName=+5V Pin=Cdt-1
+Removed Pin From Net: NetName=GND Pin=Cdt-2
+Removed Pin From Net: NetName=GND Pin=CdUand-1
+Removed Pin From Net: NetName=+5V Pin=CdUand-2
+Removed Pin From Net: NetName=GND Pin=CdWS2812-2
+Removed Pin From Net: NetName=GND Pin=Cft-2
+Removed Pin From Net: NetName=PA8_KEYBO0 Pin=CL1-1
+Removed Pin From Net: NetName=PA9_KEYBO1 Pin=CL1-2
+Removed Pin From Net: NetName=PA10_KEYBO2 Pin=CL1-3
+Removed Pin From Net: NetName=PA11_KEYBO3 Pin=CL1-4
+Removed Pin From Net: NetName=PA4_KEYBI0 Pin=CL1-5
+Removed Pin From Net: NetName=PA5_KEYBI1 Pin=CL1-6
+Removed Pin From Net: NetName=PA6_KEYBI2 Pin=CL1-7
+Removed Pin From Net: NetName=GND Pin=D2-2
+Removed Pin From Net: NetName=+5V_servos Pin=J_5Vservos-1
+Removed Pin From Net: NetName=GND Pin=MatLED-1
+Removed Pin From Net: NetName=GND Pin=Pot-3
+Removed Pin From Net: NetName=+5V Pin=Rctrst-1
+Removed Pin From Net: NetName=PA4_KEYBI0 Pin=Rk0-1
+Removed Pin From Net: NetName=+3V3_BP Pin=Rk0-2
+Removed Pin From Net: NetName=PA5_KEYBI1 Pin=Rk1-1
+Removed Pin From Net: NetName=+3V3_BP Pin=Rk1-2
+Removed Pin From Net: NetName=PA6_KEYBI2 Pin=Rk2-1
+Removed Pin From Net: NetName=+3V3_BP Pin=Rk2-2
+Removed Pin From Net: NetName=+3V3_BP Pin=Rk3-2
+Removed Pin From Net: NetName=+5V Pin=Rretro LCD-1
+Removed Pin From Net: NetName=GND Pin=Servo-1
+Removed Pin From Net: NetName=+5V_servos Pin=Servo-2
+Removed Pin From Net: NetName=PB6_TIM4_CH1_servo Pin=Servo-3
+Removed Pin From Net: NetName=PB13_LEDS_WS2812 Pin=Uand-1
+Removed Pin From Net: NetName=PB13_LEDS_WS2812 Pin=Uand-2
+Removed Pin From Net: NetName=GND Pin=Uand-3
+Removed Pin From Net: NetName=+5V Pin=Uand-5
+Removed Pin From Net: NetName=PA10_KEYBO2 Pin=Umot3-4
+Removed Pin From Net: NetName=+5V Pin=Utemp-1
+Removed Pin From Net: NetName=GND Pin=Utemp-3
+Removed Member From Class: ClassName=projet_pcb_F103 Member=*
+Removed Member From Class: ClassName=projet_pcb_F103 Member=AF1
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Cd_tft
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Cdt
+Removed Member From Class: ClassName=projet_pcb_F103 Member=CdUand
+Removed Member From Class: ClassName=projet_pcb_F103 Member=CdWS2812
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Cft
+Removed Member From Class: ClassName=projet_pcb_F103 Member=CL1
+Removed Member From Class: ClassName=projet_pcb_F103 Member=D2
+Removed Member From Class: ClassName=projet_pcb_F103 Member=J_5Vp
+Removed Member From Class: ClassName=projet_pcb_F103 Member=J_5Vservos
+Removed Member From Class: ClassName=projet_pcb_F103 Member=MatLED
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Pot
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Rctrst
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Rft
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Rk0
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Rk1
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Rk2
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Rk3
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Rled
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Rretro LCD
+Removed Member From Class: ClassName=projet_pcb_F103 Member=RsWS2812
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Servo
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Uand
+Removed Member From Class: ClassName=projet_pcb_F103 Member=Utemp
+Change component parameters: Designator = "U3V3"; Footprint = "REGULATEUR_TO220_78XX"; UniqueID = "\FEXAMNLU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Package"; Value = "(TO220)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "LF33CV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U5V"; Footprint = "REGULATEUR_TO220_78XX"; UniqueID = "\UMQELDDJ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Package"; Value = "(TO220)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "7805"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=J_?(DOUILLE_BANANE_4mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Added Component: Designator=RpuTrig(RESISTANCE_1/4W)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Component: Designator=Servo?(BARRETTE_3_M_D)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=+5V_servos Pin=J_?-1
+Added Pin To Net: NetName=PB7_U1RX Pin=JUART-4
+Added Pin To Net: NetName=PB6_TIM4_CH1_servo Pin=JUART-5
+Added Pin To Net: NetName=+5V Pin=RpuTrig-2
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=GND Pin=Servo?-1
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+5V_servos Pin=Servo?-2
+Added Pin To Net: NetName=PA10_KEYBO2 Pin=Servo?-3
+Added Pin To Net: NetName=PA11_KEYBO3 Pin=Servo?-3
+Added Pin To Net: NetName=+3.3V_servos Pin=J_?-1
+Added Pin To Net: NetName=+3.3V_servos Pin=J_?-1
+Added Pin To Net: NetName=+3.3V_servos Pin=J_?-1
+Added Pin To Net: NetName=+3.3V_servos Pin=J_?-1
+Added Pin To Net: NetName=+3.3V_servos Pin=J_?-1
+Added Pin To Net: NetName=+3.3V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+3.3V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+3.3V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+3.3V_servos Pin=Servo?-2
+Added Pin To Net: NetName=+3.3V_servos Pin=Servo?-2
+Added Net: Name=+3.3V_servos
+Added Pin To Net: NetName=A7_SPI-MOSI Pin=Servo?-3
+Added Pin To Net: NetName=A7_SPI-MOSI Pin=Uc-12
+Added Net: Name=A7_SPI-MOSI
+Added Pin To Net: NetName=PA1_PWM2/2 Pin=Uc-6
+Added Net: Name=PA1_PWM2/2
+Added Pin To Net: NetName=PA2_PWM2/3 Pin=Servo?-3
+Added Pin To Net: NetName=PA2_PWM2/3 Pin=Uc-7
+Added Net: Name=PA2_PWM2/3
+Added Pin To Net: NetName=PA3_PWM2/4 Pin=Servo?-3
+Added Pin To Net: NetName=PA3_PWM2/4 Pin=Uc-8
+Added Net: Name=PA3_PWM2/4
+Added Pin To Net: NetName=PA8_PWM1/1 Pin=Servo?-3
+Added Net: Name=PA8_PWM1/1
+Added Pin To Net: NetName=PA9_PW1/2 Pin=Servo?-3
+Added Net: Name=PA9_PW1/2
+Added Pin To Net: NetName=PA10_PWM3 Pin=Umot3-4
+Added Net: Name=PA10_PWM3
+Added Pin To Net: NetName=PA15_PWM2/1 Pin=Servo?-3
+Added Pin To Net: NetName=PA15_PWM2/1 Pin=Uc-30
+Added Net: Name=PA15_PWM2/1
+Added Pin To Net: NetName=PB0_PWM3/3 Pin=Servo?-3
+Added Pin To Net: NetName=PB0_PWM3/3 Pin=Uc-13
+Added Net: Name=PB0_PWM3/3
+Added Pin To Net: NetName=PB1_PWM3/2 Pin=Servo?-3
+Added Pin To Net: NetName=PB1_PWM3/2 Pin=Uc-14
+Added Net: Name=PB1_PWM3/2
+Added Pin To Net: NetName=PB3_PWM2/2 Pin=Uc-31
+Added Net: Name=PB3_PWM2/2
+Added Pin To Net: NetName=PB4_LCD_RW Pin=J_Capt_US-3
+Added Pin To Net: NetName=PB4_LCD_RW Pin=Servo?-3
+Added Pin To Net: NetName=PB4_LCD_RW Pin=Uc-32
+Added Net: Name=PB4_LCD_RW
+Added Pin To Net: NetName=PB5_LCD_E Pin=J_Capt_US-2
+Added Pin To Net: NetName=PB5_LCD_E Pin=RpuTrig-1
+Added Pin To Net: NetName=PB5_LCD_E Pin=Uc-33
+Added Net: Name=PB5_LCD_E
+Added Pin To Net: NetName=PB10_PWM2/3 Pin=Uc-15
+Added Net: Name=PB10_PWM2/3
+Added Pin To Net: NetName=PB10 PWM2/3 Pin=Servo?-3
+Added Net: Name=PB10 PWM2/3
+Added Pin To Net: NetName=PB11 PWM2/4 Pin=Servo?-3
+Added Net: Name=PB11 PWM2/4
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component J_? DOUILLE BANANE 4mm
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component RpuTrig 10k
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Added Member To Class: ClassName=projet_pcb_F103 Member=Component Servo? BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
