@@ -64,7 +64,30 @@ int main(void)
 	Systick_add_callback_function(&process_ms);
 
 	Servo_t servo1;
+    Servo_t servo2;
+    Servo_t servo3;
+    Servo_t servo4;
+    Servo_t servo5;
+    Servo_t servo6;
+    Servo_t servo7;
+    Servo_t servo8;
+    Servo_t servo9;
+    Servo_t servo10;
+    Servo_t servo11;
+    Servo_t servo12;
+
 	SERVO_init(&servo1, TIMER1_ID, TIM_CHANNEL_1);
+    SERVO_init(&servo2, TIMER1_ID, TIM_CHANNEL_2);
+    SERVO_init(&servo3, TIMER1_ID, TIM_CHANNEL_3);
+    SERVO_init(&servo4, TIMER1_ID, TIM_CHANNEL_4);
+    SERVO_init(&servo5, TIMER2_ID, TIM_CHANNEL_1);
+    SERVO_init(&servo6, TIMER2_ID, TIM_CHANNEL_2);
+    SERVO_init(&servo7, TIMER2_ID, TIM_CHANNEL_3);
+    SERVO_init(&servo8, TIMER2_ID, TIM_CHANNEL_4);
+    SERVO_init(&servo9, TIMER3_ID, TIM_CHANNEL_1);
+    SERVO_init(&servo10, TIMER3_ID, TIM_CHANNEL_2);
+    SERVO_init(&servo11, TIMER3_ID, TIM_CHANNEL_3);
+    SERVO_init(&servo12, TIMER3_ID, TIM_CHANNEL_4);
 
     while(1)
     {
@@ -76,6 +99,18 @@ int main(void)
             // Example of moving the servo: Modify the duty cycle to move the servo
             // Here, just toggling between two positions as an example
             SERVO_set_position(&servo1, 50);
+            SERVO_set_position(&servo2, 50);
+            SERVO_set_position(&servo3, 50);
+            SERVO_set_position(&servo4, 50);
+            SERVO_set_position(&servo5, 50);
+            SERVO_set_position(&servo6, 50);
+            SERVO_set_position(&servo7, 50);
+            SERVO_set_position(&servo8, 50);
+            SERVO_set_position(&servo9, 50);
+            SERVO_set_position(&servo10, 50);
+            SERVO_set_position(&servo11, 50);
+            SERVO_set_position(&servo12, 50);
+            )
         }
         SERVO_set_position(&servo1, 0);
 
